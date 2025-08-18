@@ -71,15 +71,6 @@ nav a {
 nav a:hover {
   color: #1cffe5;
 }
-/* Responsive */
-@media (max-width: 768px) {
-  nav {
-    display: none; /* hide nav links on small screens */
-  }
-}
-    
-
-   
    .download-btn {
   background: #1cffe5;
   border: none;
@@ -88,12 +79,18 @@ nav a:hover {
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
-  display: flex;
+  display: inLine-flex;
   align-items: center;
   gap: 8px;
   font-size: 1rem;
   animation: pulseBlink 2.5s infinite ease-in-out;
   transition: 0.3s;
+   }
+
+@media screen and (max-width: 768px) {
+  .download-btn {
+    display: none;
+  }
 }
 
 .download-btn:hover {
